@@ -45,7 +45,7 @@ const Home = () => {
       <SearchForm searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} />
       {loading && <p style={{ marginTop: '20px', fontSize: '18px' }}>Loading...</p>}
       {searchResults.length > 0 && (
-        <div style={{ marginTop: '20px', border: '1px solid #ddd', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
+        <div style={{ marginTop: '20px', border: '1px solid #ddd', borderRadius: '10px', overflow: 'auto', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead style={{ background: '#f2f2f2' }}>
               <tr>
